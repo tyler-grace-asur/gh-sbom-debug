@@ -1,0 +1,58 @@
+{
+    "spdxVersion": "SPDX-2.3",
+    "dataLicense": "CC0-1.0",
+    "SPDXID": "SPDXRef-DOCUMENT",
+    "name": "com.github.tyler-grace-asur/gh-sbom-debug",
+    "documentNamespace": "https://spdx.org/spdxdocs/protobom/121dfc4e-ad0b-456b-b5a3-adebd7f68ac2",
+    "creationInfo": {
+        "creators": [
+            "Tool: protobom-devel",
+            "Tool: GitHub.com-Dependency-Graph"
+        ],
+        "created": "2024-11-21T20:18:55Z"
+    },
+    "packages": [
+        {
+            "name": "typescript",
+            "SPDXID": "SPDXRef-npm-typescript-5.6.3-7b26ed",
+            "versionInfo": "5.6.3",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "licenseConcluded": "Apache-2.0",
+            "copyrightText": "(c) by W3C, Copyright (c) 1991-2017 Unicode, Inc., Copyright (c) 2018 The Khronos Group Inc., Copyright (c) 2018 WHATWG, Copyright (c) Microsoft Corporation, Copyright (c) YEAR W3C(r) (MIT, ERCIM, Keio, Beihang). Disclaimers",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceType": "purl",
+                    "referenceLocator": "pkg:npm/typescript@5.6.3"
+                }
+            ]
+        },
+        {
+            "name": "com.github.tyler-grace-asur/gh-sbom-debug",
+            "SPDXID": "SPDXRef-github-tyler-grace-asur-gh-sbom-debug-main-3842ae",
+            "versionInfo": "main",
+            "downloadLocation": "git+https://github.com/tyler-grace-asur/gh-sbom-debug",
+            "filesAnalyzed": false,
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceType": "purl",
+                    "referenceLocator": "pkg:github/tyler-grace-asur/gh-sbom-debug@main"
+                }
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "spdxElementId": "SPDXRef-github-tyler-grace-asur-gh-sbom-debug-main-3842ae",
+            "relatedSpdxElement": "SPDXRef-npm-typescript-5.6.3-7b26ed",
+            "relationshipType": "DEPENDS_ON"
+        },
+        {
+            "spdxElementId": "SPDXRef-DOCUMENT",
+            "relatedSpdxElement": "SPDXRef-github-tyler-grace-asur-gh-sbom-debug-main-3842ae",
+            "relationshipType": "DESCRIBES"
+        }
+    ]
+}
